@@ -9,11 +9,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles.css" />
     <title>RsvpForm</title>
 </head>
 <body>
     @using (Html.BeginForm())
     {
+    //return any validation messages after form has been submitted
+    @Html.ValidationSummary()
     <div>
         <p>Your Name: @Html.TextBoxFor(x => x.Name)</p>
         <p>Your Email: @Html.TextBoxFor(x => x.Email)</p>
