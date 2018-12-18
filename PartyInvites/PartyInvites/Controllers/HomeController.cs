@@ -29,7 +29,7 @@ namespace PartyInvites.Controllers
             //check model validation rules
             if (ModelState.IsValid)
             {
-                //TODO: email response to the party organizer
+                //email response to the party organizer
                 return View("Thanks", guestResponse);
             }
             else
